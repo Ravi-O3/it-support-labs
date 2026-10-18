@@ -1,0 +1,6 @@
+// Hunt for repeated failed logon attempts (Event ID 4625)
+// Identifies potential brute-force or password guessing activity (MITRE ATT&CK T1110)
+SecurityEvent
+| where EventID == 4625
+| summarize Failures = count() by TargetAccount, IpAddress, LogonType, bin(TimeGenerated, 5m)
+| order by Failures desc
