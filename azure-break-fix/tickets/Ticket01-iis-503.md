@@ -1,9 +1,9 @@
-# Ticket 1: Website returns HTTP 503 - Service Unavailable
+# Ticket 1: Website returns HTTP 503: Service Unavailable
 
 **Date:** October 1st, 2026. \
 **Time:** 08:36 PM (00:36 UTC, Oct 2nd)\
 **Customer:** Ravi Prajapati\
-**Reported Problem:** The test website at http://localhost on SUPPORT-SRV01 shows "HTTP 503 - Service Unavailable" error.  
+**Reported Problem:** The test website at http://localhost on SUPPORT-SRV01 shows "HTTP Error 503. The service is unavailable."  
 **Impact:** The site is totally unavailable to all of the users.
 
 **What I checked:**
@@ -17,13 +17,15 @@ I went to IIS Manager (Application Pools > DefaultAppPool > Start) and started t
 
 ## Evidence
 
+Screenshots 1 and 3 are from a reproduction of the same fault on October 6, 2026, where I started the pool from PowerShell with `Start-WebAppPool DefaultAppPool`.
+
 ### 1. Initial 503 Service Unavailable Error
 ![HTTP 503 Error](../screenshots/Ticket-1/503-Service-Unavailable.png)
 
 ### 2. Service Check and HTTPERR Log Analysis
 ![PowerShell W3SVC and HTTPERR Log](../screenshots/Ticket-1/HTTPERR-Logs.png)
 
-### 3. Verification - Site Restored
+### 3. Verification: Site Restored
 ![Site Restored](../screenshots/Ticket-1/Site-Restored.png)
 
 
