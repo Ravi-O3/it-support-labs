@@ -1,4 +1,4 @@
-# Ticket 2: External users cannot reach web server on port 80. 
+# Ticket 2: External users cannot reach the web server on port 80
 
 **Date:** October 6th, 2026\
 **Time:** 09:41 AM (13:41 UTC)\
@@ -14,9 +14,9 @@ In Windows Defender Firewall, `Block rules` always override `Allow Rules`. Even 
 
 **Fix:**
 Remove the blocking firewall rule. I used `Remove-NetFirewallRule -DisplayName "Block HTTP 80"`.
- 
- **Verification:**
- I ran `nc -vz <vm-public-ip> 80` from external Mac terminal which succeeded immediately, and confirmed the website loaded in the browser.
+
+**Verification:**
+I ran `nc -vz <vm-public-ip> 80` from external Mac terminal which succeeded immediately, and confirmed the website loaded in the browser.
 
 ## Evidence
 

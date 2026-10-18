@@ -7,7 +7,7 @@
 **Impact:**  Applications and remote clients cannot query the database over standard network sockets. 
 
 **What I checked:** 
-To confirm if the SQL Server is listening on the standard port, I ran `Test-NetConnection localhost -Port 1433` in PowerShell. The output showed `TcpTestSucceeded : False` confirming the database engine was not listening on TCP 1433. Next, I went to SQL Server Configuration and navigated to SQL Server Network Configuration and in Protocols for SQLEXPRESS. I found that TCP/IP was set to Disabled, leaving only Shared Memory active. 
+To confirm if the SQL Server is listening on the standard port, I ran `Test-NetConnection localhost -Port 1433` in PowerShell. The output showed `TcpTestSucceeded : False` confirming the database engine was not listening on TCP 1433. Next, I went to SQL Server Configuration Manager and navigated to SQL Server Network Configuration and in Protocols for SQLEXPRESS. I found that TCP/IP was set to Disabled, leaving only Shared Memory active. 
 
 **Root Cause:** SQL Server Express installs by default with TCP/IP network protocol disabled for security and relies on dynamic ports rather than standard static port 1433. 
 

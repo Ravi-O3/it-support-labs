@@ -1,6 +1,6 @@
 # Ticket 1: Website returns HTTP 503: Service Unavailable
 
-**Date:** October 1st, 2026. \
+**Date:** October 1st, 2026\
 **Time:** 08:36 PM (00:36 UTC, Oct 2nd)\
 **Customer:** Ravi Prajapati\
 **Reported Problem:** The test website at http://localhost on SUPPORT-SRV01 shows "HTTP Error 503. The service is unavailable."  
