@@ -17,7 +17,7 @@ I went to IIS Manager (Application Pools > DefaultAppPool > Start) and started t
 
 ## Evidence
 
-Screenshots 1 and 3 are from a reproduction of the same fault on October 6, 2026, where I started the pool from PowerShell with `Start-WebAppPool DefaultAppPool`.
+Screenshots 1 and 3 are from a reproduction of the same fault on October 6th, 2026, where I started the pool from PowerShell with `Start-WebAppPool DefaultAppPool`.
 
 ### 1. Initial 503 Service Unavailable Error
 ![HTTP 503 Error](../screenshots/Ticket-1/503-Service-Unavailable.png)

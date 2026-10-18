@@ -19,7 +19,7 @@ I checked if the SQL Server is listening on the standard port 1433 with `Test-Ne
 
 ## Evidence
 
-Screenshots 2 and 3 were captured on October 18, 2026.
+Screenshots 2 and 3 were captured on October 18th, 2026.
 
 ### 1. TCP/IP disabled in SQL Server Configuration Manager
 ![TCP/IP disabled](../screenshots/Ticket-3/01-TCPIP-Disabled.png)
