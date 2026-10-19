@@ -47,6 +47,3 @@ The problem was not on the machine but in the Azure virtual network configuratio
 
 ## What I would tell the user
 The new server could not find our domain because the network was still sending its lookups to Azure's default directory instead of our own. I changed the network setting so it uses our domain controller, and the server is now joined to the domain. Nothing had to be changed on the server itself.
-
-## Time to resolve
-1 hour 30 minutes (5:45 PM to 7:15 PM EDT).
